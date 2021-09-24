@@ -1,0 +1,8 @@
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll.config
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.deps.json
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.csprojAssemblyReference.cache
