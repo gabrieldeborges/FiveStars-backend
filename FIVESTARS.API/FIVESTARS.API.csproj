@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FIVESTARS.Domain\FIVESTARS.Domain.csproj" />
-    <ProjectReference Include="..\FIVESTARS.Infra\FIVESTARS.Infra.csproj" />
+    <ProjectReference Include="..\FIVESTARS.Domain\FiveStars.Domain.csproj" />
+    <ProjectReference Include="..\FIVESTARS.Infra\FiveStars.Infra.csproj" />
   </ItemGroup>
 
 

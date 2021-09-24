@@ -1371,17 +1371,18 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "FIVESTARS.Domain/1.0.0": {
+      "FiveStars.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "FluentValidator": "2.0.4"
+          "FluentValidator": "2.0.4",
+          "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "compile": {
-          "bin/placeholder/FIVESTARS.Domain.dll": {}
+          "bin/placeholder/FiveStars.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FIVESTARS.Domain.dll": {}
+          "bin/placeholder/FiveStars.Domain.dll": {}
         }
       }
     }
@@ -5037,33 +5038,37 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "FIVESTARS.Domain/1.0.0": {
+    "FiveStars.Domain/1.0.0": {
       "type": "project",
-      "path": "../FIVESTARS.Domain/FIVESTARS.Domain.csproj",
-      "msbuildProject": "../FIVESTARS.Domain/FIVESTARS.Domain.csproj"
+      "path": "../FIVESTARS.Domain/FiveStars.Domain.csproj",
+      "msbuildProject": "../FIVESTARS.Domain/FiveStars.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "FIVESTARS.Domain >= 1.0.0",
+      "FiveStars.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.10"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LUANA\\.nuget\\packages\\": {}
+    "C:\\Users\\gabriel.borges\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
-      "projectName": "FIVESTARS.Infra",
-      "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
-      "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\obj\\",
+      "projectUniqueName": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj",
+      "projectName": "FiveStars.Infra",
+      "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj",
+      "packagesPath": "C:\\Users\\gabriel.borges\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabriel.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5071,14 +5076,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://newton.gpssa.com.br/NUGET/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
-              "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj"
+            "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+              "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
             }
           }
         }
@@ -5117,7 +5123,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

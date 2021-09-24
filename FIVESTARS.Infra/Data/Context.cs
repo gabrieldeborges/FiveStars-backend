@@ -16,7 +16,7 @@ namespace FIVESTARS.Infra.Data
             
         }
 
-        public DbSet<Teste> teste { get; set; } 
+        //public DbSet<Teste> teste { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

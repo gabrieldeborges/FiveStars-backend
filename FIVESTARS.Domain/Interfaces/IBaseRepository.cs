@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FIVESTARS.Domain.Interfaces
 {
-    public interface IBaseRepository<TEntity> : IDisposable /*where TEntity : BaseEntity*/
+    public interface IBaseRepository<TEntity> : IDisposable where TEntity : class
     {
         void Insert(TEntity obj);
 

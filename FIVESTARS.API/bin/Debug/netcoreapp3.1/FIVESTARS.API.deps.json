@@ -8,14 +8,7 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1",
-      "NETCOREAPP1_0_OR_GREATER",
-      "NETCOREAPP1_1_OR_GREATER",
-      "NETCOREAPP2_0_OR_GREATER",
-      "NETCOREAPP2_1_OR_GREATER",
-      "NETCOREAPP2_2_OR_GREATER",
-      "NETCOREAPP3_0_OR_GREATER",
-      "NETCOREAPP3_1_OR_GREATER"
+      "NETCOREAPP3_1"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -29,11 +22,11 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FIVESTARS.API/1.0.0": {
+      "FiveStars.API/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.90",
-          "FIVESTARS.Domain": "1.0.0",
-          "FIVESTARS.Infra": "1.0.0",
+          "FiveStars.Domain": "1.0.0",
+          "FiveStars.Infra": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -308,10 +301,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "FIVESTARS.API.dll": {}
+          "FiveStars.API.dll": {}
         },
         "compile": {
-          "FIVESTARS.API.dll": {}
+          "FiveStars.API.dll": {}
         }
       },
       "Dapper/2.0.90": {
@@ -1708,28 +1701,29 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "FIVESTARS.Domain/1.0.0": {
+      "FiveStars.Domain/1.0.0": {
         "dependencies": {
-          "FluentValidator": "2.0.4"
+          "FluentValidator": "2.0.4",
+          "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "runtime": {
-          "FIVESTARS.Domain.dll": {}
+          "FiveStars.Domain.dll": {}
         },
         "compile": {
-          "FIVESTARS.Domain.dll": {}
+          "FiveStars.Domain.dll": {}
         }
       },
-      "FIVESTARS.Infra/1.0.0": {
+      "FiveStars.Infra/1.0.0": {
         "dependencies": {
-          "FIVESTARS.Domain": "1.0.0",
+          "FiveStars.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.10"
         },
         "runtime": {
-          "FIVESTARS.Infra.dll": {}
+          "FiveStars.Infra.dll": {}
         },
         "compile": {
-          "FIVESTARS.Infra.dll": {}
+          "FiveStars.Infra.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3355,7 +3349,7 @@
     }
   },
   "libraries": {
-    "FIVESTARS.API/1.0.0": {
+    "FiveStars.API/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -4256,12 +4250,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "FIVESTARS.Domain/1.0.0": {
+    "FiveStars.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "FIVESTARS.Infra/1.0.0": {
+    "FiveStars.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

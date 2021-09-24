@@ -9,3 +9,14 @@ C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csproj.CopyComplete
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.dll
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.pdb
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.deps.json
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.dll
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.pdb
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll.config
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csprojAssemblyReference.cache
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csproj.CopyComplete
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.dll
+C:\Users\gabriel.borges\Documents\Gabriel\projetos\fivestars\FiveStars-backend\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.pdb

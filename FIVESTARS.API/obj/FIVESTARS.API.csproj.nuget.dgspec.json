@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj": {}
+    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.API\\FiveStars.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj": {
+    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.API\\FiveStars.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj",
-        "projectName": "FIVESTARS.API",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\obj\\",
+        "projectUniqueName": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.API\\FiveStars.API.csproj",
+        "projectName": "FiveStars.API",
+        "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.API\\FiveStars.API.csproj",
+        "packagesPath": "C:\\Users\\gabriel.borges\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +25,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://newton.gpssa.com.br/NUGET/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj"
+              "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
               },
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj"
+              "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj": {
+                "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj"
               }
             }
           }
@@ -78,21 +82,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
+    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
-        "projectName": "FIVESTARS.Domain",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\obj\\",
+        "projectUniqueName": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj",
+        "projectName": "FiveStars.Domain",
+        "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj",
+        "packagesPath": "C:\\Users\\gabriel.borges\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,6 +107,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://newton.gpssa.com.br/NUGET/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,6 +129,10 @@
             "FluentValidator": {
               "target": "Package",
               "version": "[2.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
             }
           },
           "imports": [
@@ -138,21 +150,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj": {
+    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
-        "projectName": "FIVESTARS.Infra",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\obj\\",
+        "projectUniqueName": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj",
+        "projectName": "FiveStars.Infra",
+        "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj",
+        "packagesPath": "C:\\Users\\gabriel.borges\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -160,14 +175,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://newton.gpssa.com.br/NUGET/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj"
+              "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+                "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
               }
             }
           }
@@ -206,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
