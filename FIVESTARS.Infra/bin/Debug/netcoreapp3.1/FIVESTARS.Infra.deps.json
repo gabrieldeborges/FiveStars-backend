@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FiveStars.Infra/1.0.0": {
+      "FIVESTARS.Infra/1.0.0": {
         "dependencies": {
-          "FiveStars.Domain": "1.0.0",
+          "FIVESTARS.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.10"
         },
         "runtime": {
-          "FiveStars.Infra.dll": {}
+          "FIVESTARS.Infra.dll": {}
         }
       },
       "FluentValidator/2.0.4": {
@@ -846,19 +846,19 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "FiveStars.Domain/1.0.0": {
+      "FIVESTARS.Domain/1.0.0": {
         "dependencies": {
           "FluentValidator": "2.0.4",
           "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "runtime": {
-          "FiveStars.Domain.dll": {}
+          "FIVESTARS.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "FiveStars.Infra/1.0.0": {
+    "FIVESTARS.Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1486,7 +1486,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "FiveStars.Domain/1.0.0": {
+    "FIVESTARS.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

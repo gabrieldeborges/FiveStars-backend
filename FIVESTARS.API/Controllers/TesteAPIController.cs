@@ -21,10 +21,17 @@ namespace FIVESTARS.API.Controllers
             _handler = handler;
         }
 
-        [HttpGet("Buscar")]
+        [HttpGet("")]
         public IActionResult Get()
         {
             return Response(_handler.Handler());
         }
+
+        [HttpPost("")]
+        public IActionResult Post()
+        {
+            return Response(_handler.Handler());
+        }
+
     }
 }

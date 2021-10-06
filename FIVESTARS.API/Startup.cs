@@ -35,8 +35,9 @@ namespace FIVESTARS.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connection = Configuration["ConnectionStrings:connection"];
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest).AddJsonOptions(options => options.JsonSerializerOptions. = new DefaultContractResolver());
-            services.AddDbContext<Context>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connection")).EnableSensitiveDataLogging());
+            services.AddDbContext<Context>(opt => opt.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
 
             AddRepositories(services);
@@ -48,6 +49,9 @@ namespace FIVESTARS.API
             {
                 options.Level = CompressionLevel.Optimal;
             });
+
+            services.AddSwaggerGen();
+
 
             services.AddControllers();
             AddHandlers(services);
@@ -77,6 +81,8 @@ namespace FIVESTARS.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
 
             app.UseEndpoints(endpoints =>
             {

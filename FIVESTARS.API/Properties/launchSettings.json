@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/FIVESTARS_API",
+      "applicationUrl": "http://localhost:81/FIVESTARS_API",
       "sslPort": 0
     },
     "iisExpress": {
