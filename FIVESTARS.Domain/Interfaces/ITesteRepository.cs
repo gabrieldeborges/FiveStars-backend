@@ -7,6 +7,7 @@ namespace FIVESTARS.Domain.Interfaces
 {
     public interface ITesteRepository
     {
+
         public List<Teste> listarTeste();
     }
 }

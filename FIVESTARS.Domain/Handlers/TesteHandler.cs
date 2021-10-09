@@ -1,4 +1,5 @@
-﻿using FIVESTARS.Domain.Entities;
+﻿using FIVESTARS.Domain.Commands.Bedrooms.Input;
+using FIVESTARS.Domain.Entities;
 using FIVESTARS.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,5 @@ namespace FIVESTARS.Domain.Handlers
         {
             return _repository.listarTeste();
         }
-
     }
 }

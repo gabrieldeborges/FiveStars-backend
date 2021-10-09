@@ -7,14 +7,8 @@ namespace FIVESTARS.Domain.Interfaces
 {
     public interface IBaseRepository<TEntity> : IDisposable where TEntity : class
     {
-        void Insert(TEntity obj);
+        int Insert(TEntity obj);
 
-        void Update(TEntity obj);
-
-        void Delete(int id);
-
-        IList<TEntity> Select();
-
-        TEntity Select(int id);
+        int Update(TEntity obj);
     }
 }

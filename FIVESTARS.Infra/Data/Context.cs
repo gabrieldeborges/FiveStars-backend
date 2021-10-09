@@ -15,18 +15,23 @@ namespace FIVESTARS.Infra.Data
         {
             
         }
-
-        //public DbSet<Teste> teste { get; set; } 
+        public DbSet<Teste> teste { get; set; }
+        public DbSet<Bedroom> Bedroom { get; set; }
+        public DbSet<Client> Client { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Teste>().ToTable("TABELA_TESTE").HasKey(x => x.ID);
+            modelBuilder.Entity<Client>().ToTable("CLIENT").HasKey(x => x.ID);
+
+            modelBuilder.Entity<Bedroom>().ToTable("BEDROOM").HasKey(x => x.ID);
+
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<Teste>().HasOne(x => x.FOR_ITEM_COMPRA)
-            //       .WithMany(ctn => ctn.FOR_ITEM_CONTRATO)
-            //       .HasForeignKey(fk => fk.ID_ITEM_COMPRA);
+            //modelBuilder.Entity<Teste>().HasOne(x => x.TABELA_TESTE)
+            //       .WithMany(ctn => ctn.TABELA_TESTE)
+            //       .HasForeignKey(fk => fk.TABELA_TESTE);
         }
 
-      
+
     }
 }

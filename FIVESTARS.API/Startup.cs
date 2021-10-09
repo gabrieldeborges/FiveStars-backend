@@ -39,9 +39,7 @@ namespace FIVESTARS.API
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest).AddJsonOptions(options => options.JsonSerializerOptions. = new DefaultContractResolver());
             services.AddDbContext<Context>(opt => opt.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
-
             AddRepositories(services);
-
 
             services.AddResponseCompression();
 
@@ -52,8 +50,16 @@ namespace FIVESTARS.API
 
             services.AddSwaggerGen();
 
+            //services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNameCaseInsensitive = true);
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+
+                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+            });
+
+
             AddHandlers(services);
 
             MapEntities();
@@ -92,16 +98,22 @@ namespace FIVESTARS.API
         private void AddRepositories(IServiceCollection services)
         {
             services.AddTransient<ITesteRepository, TesteRepository>();
+            services.AddTransient<IBedroomRepository, BedroomRepository>();
+            services.AddTransient<IClientRepository, ClientRepository>();
         }
 
         private void AddHandlers(IServiceCollection services)
         {
             services.AddTransient<TesteHandler, TesteHandler>();
+            services.AddTransient<BedroomHandler, BedroomHandler>();
+            services.AddTransient<ClientHandler, ClientHandler>();
         }
 
         private void MapEntities()
         {
             MapEntity(typeof(Teste));
+            MapEntity(typeof(Client));
+            MapEntity(typeof(Bedroom));
         }
 
         private void MapEntity(Type entityType)

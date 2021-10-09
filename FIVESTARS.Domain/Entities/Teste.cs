@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace FIVESTARS.Domain.Entities
 {
     [Table("TABELA_TESTE")]
-    public class Teste : BaseEntity
+    public class Teste //: BaseEntity
     {
-        //public int ID { get; set; }
+        public int ID { get; set; }
         public string NOME { get; set; }
 
         public Teste(int ID, string NOME)

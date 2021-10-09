@@ -17,29 +17,17 @@ namespace FIVESTARS.Infra.Data
             _context = mySqlContext;
         }
     
-        public void Insert(TEntity obj)
+        public int Insert(TEntity obj)
         {
             _context.Set<TEntity>().Add(obj);
-            _context.SaveChanges();
+            return _context.SaveChanges();
         }
     
-        public void Update(TEntity obj)
+        public int Update(TEntity obj)
         {
             _context.Entry(obj).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _context.SaveChanges();
+            return _context.SaveChanges();
         }
-    
-        public void Delete(int id)
-        {
-            _context.Remove(Select(id));
-            _context.SaveChanges();
-        }
-    
-        public IList<TEntity> Select() =>
-            _context.Set<TEntity>().ToList();
-    
-        public TEntity Select(int id) =>
-            _context.Set<TEntity>().Find(id);
     
         public void Dispose()
         {

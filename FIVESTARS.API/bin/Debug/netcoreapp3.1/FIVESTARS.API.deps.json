@@ -1320,17 +1320,18 @@
           "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "runtime": {
-          "FIVESTARS.Domain.dll": {}
+          "FiveStars.Domain.dll": {}
         },
         "compile": {
-          "FIVESTARS.Domain.dll": {}
+          "FiveStars.Domain.dll": {}
         }
       },
       "FIVESTARS.Infra/1.0.0": {
         "dependencies": {
           "FIVESTARS.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.10",
-          "Microsoft.EntityFrameworkCore.Relational": "5.0.10"
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.10",
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.2"
         },
         "runtime": {
           "FIVESTARS.Infra.dll": {}

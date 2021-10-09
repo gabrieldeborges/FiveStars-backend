@@ -10,41 +10,27 @@ namespace FIVESTARS.Infra.Repository
     public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity>, IDisposable where TEntity : class
     {
         protected DbSet<TEntity> DbSet;
-        protected Context Db; 
+        protected Context Db;
         public BaseRepository(Context context)
         {
             Db = context;
             DbSet = context.Set<TEntity>();
         }
 
-        public void Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Db.Dispose();
         }
 
-        public void Insert(TEntity obj)
+        public int Insert(TEntity obj)
         {
-            throw new NotImplementedException();
+            DbSet.Add(obj);
+            return Db.SaveChanges();
         }
-
-        public IList<TEntity> Select()
+        public int Update(TEntity obj)
         {
-            throw new NotImplementedException();
-        }
-
-        public TEntity Select(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(TEntity obj)
-        {
-            throw new NotImplementedException();
+            DbSet.Update(obj);
+            return Db.SaveChanges();
         }
     }
 }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {}
+    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj",
-        "projectName": "FiveStars.Domain",
-        "projectPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj",
-        "packagesPath": "C:\\Users\\gabriel.borges\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.borges\\Documents\\Gabriel\\projetos\\fivestars\\FiveStars-backend\\FIVESTARS.Domain\\obj\\",
+        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
+        "projectName": "FIVESTARS.Domain",
+        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
+        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.borges\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://newton.gpssa.com.br/NUGET/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
