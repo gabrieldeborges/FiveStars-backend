@@ -20,6 +20,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using FIVESTARS.Domain.Handlers;
 using Microsoft.AspNetCore.ResponseCompression;
 using System.IO.Compression;
+using FIVESTARS.API.Converters;
 
 namespace FIVESTARS.API
 {
@@ -57,6 +58,7 @@ namespace FIVESTARS.API
                 options.JsonSerializerOptions.PropertyNamingPolicy = null;
 
                 options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
             });
 
 

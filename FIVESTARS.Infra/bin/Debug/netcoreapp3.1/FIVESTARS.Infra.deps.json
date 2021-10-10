@@ -874,7 +874,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "runtime": {
-          "FIVESTARS.Domain.dll": {}
+          "FiveStars.Domain.dll": {}
         }
       }
     }

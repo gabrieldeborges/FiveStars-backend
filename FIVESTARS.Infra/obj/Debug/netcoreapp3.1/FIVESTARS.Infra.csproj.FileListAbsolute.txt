@@ -1,9 +1,9 @@
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.deps.json
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.dll
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Infra.pdb
-C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
-C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
-C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll.config
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FiveStars.Domain.dll
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FiveStars.Domain.pdb
+C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\bin\Debug\netcoreapp3.1\FiveStars.Domain.dll.config
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csprojAssemblyReference.cache
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csproj.CoreCompileInputs.cache
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Infra\obj\Debug\netcoreapp3.1\FIVESTARS.Infra.csproj.CopyComplete

@@ -11,6 +11,8 @@ namespace FIVESTARS.Domain.Commands.Client
         public string NOME { get; set; }
         public string CPF { get; set; }
         public string CEP { get; set; }
+        public string Email { get; set; }
+        public DateTime? birthDate { get; set; }
 
         public bool isValid()
         {

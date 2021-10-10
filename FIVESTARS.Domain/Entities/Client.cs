@@ -10,6 +10,8 @@ namespace FIVESTARS.Domain.Entities
         public string NOME { get; set; }
         public string CPF { get; set; }
         public string CEP { get; set; }
+        public DateTime? BIRTH_DATE { get; set; }
+        public string EMAIL { get; set; }
         public int STATUS { get; set; }
 
         public Client()
@@ -17,11 +19,13 @@ namespace FIVESTARS.Domain.Entities
 
         }
 
-        public Client(string nome, string cpf, string cep)
+        public Client(string nome, string cpf, string cep, string email, DateTime? birthDay)
         {
             NOME = nome;
             CPF = cpf;
             CEP = cep;
+            EMAIL = email;
+            BIRTH_DATE = birthDay;
         }
     }
 }

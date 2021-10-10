@@ -34,7 +34,9 @@ namespace FIVESTARS.Domain.Handlers
                 Client cliemt = new Client(
                     command.NOME,
                     command.CPF,
-                    command.CEP
+                    command.CEP,
+                    command.Email,
+                    command.birthDate
                 );
 
                 return _repository.SaveClient(cliemt);
@@ -45,6 +47,8 @@ namespace FIVESTARS.Domain.Handlers
                 client.NOME = command.NOME;
                 client.CPF = command.CPF;
                 client.CEP = command.CEP;
+                client.EMAIL = command.Email;
+                client.BIRTH_DATE = command.birthDate;
 
                 return _repository.UpdateClient(client);
             }
