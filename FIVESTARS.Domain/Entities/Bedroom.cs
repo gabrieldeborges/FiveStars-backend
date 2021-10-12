@@ -14,6 +14,7 @@ namespace FIVESTARS.Domain.Entities
         public int FLOOR { get; set; }
         public int DOOR { get; set; }
         public int STATUS { get; set; }
+        public virtual List<Reservation> RESERVATION { get; set; }
         public Bedroom()
         {
 

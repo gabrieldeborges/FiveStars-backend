@@ -20,6 +20,10 @@
     <Compile Include="Migrations\20211009051518_tabelClient2.Designer.cs" />
     <Compile Include="Migrations\20211009052411_tabelClient4.cs" />
     <Compile Include="Migrations\20211009052411_tabelClient4.Designer.cs" />
+    <Compile Include="Migrations\20211011221957_aditional_reservation.cs" />
+    <Compile Include="Migrations\20211011221957_aditional_reservation.Designer.cs" />
+    <Compile Include="Migrations\20211011224855_aditional_reservation2.cs" />
+    <Compile Include="Migrations\20211011224855_aditional_reservation2.Designer.cs" />
     <Compile Include="Migrations\ContextModelSnapshot.cs" />
   </ItemGroup>
 

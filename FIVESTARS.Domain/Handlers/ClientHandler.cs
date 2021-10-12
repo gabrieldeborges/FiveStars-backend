@@ -23,9 +23,18 @@ namespace FIVESTARS.Domain.Handlers
 
         public int Handler(SaveClientCommand command)
         {
+            command.CEP = command.CEP.Replace("-", "");
+            command.CPF = command.CPF.Replace("-", "");
+
             if (!command.isvalid())
             {
                 AddNotifications(command.Notifications);
+                return 0;
+            }
+
+            if (_repository.ExistsEmail(command.Email))
+            {
+                AddNotification("Email", "Email já cadastrado");
                 return 0;
             }
 

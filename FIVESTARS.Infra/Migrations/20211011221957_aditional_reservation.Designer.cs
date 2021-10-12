@@ -3,14 +3,16 @@ using System;
 using FIVESTARS.Infra.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FIVESTARS.Infra.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20211011221957_aditional_reservation")]
+    partial class aditional_reservation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -84,7 +86,10 @@ namespace FIVESTARS.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FINAL_DATE")
+                    b.Property<DateTime>("DATA_FIM")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DATA_INICIO")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("ID_BEDROOM")
@@ -92,9 +97,6 @@ namespace FIVESTARS.Infra.Migrations
 
                     b.Property<int>("ID_CLIENT")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("INITIAL_DATE")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("OBSERVATION")
                         .HasColumnType("longtext");

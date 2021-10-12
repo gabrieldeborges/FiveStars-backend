@@ -13,6 +13,7 @@ namespace FIVESTARS.Domain.Entities
         public DateTime? BIRTH_DATE { get; set; }
         public string EMAIL { get; set; }
         public int STATUS { get; set; }
+        public virtual List<Reservation> RESERVATION { get; set; }
 
         public Client()
         {

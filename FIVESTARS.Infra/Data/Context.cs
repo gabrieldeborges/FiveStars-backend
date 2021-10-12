@@ -23,13 +23,18 @@ namespace FIVESTARS.Infra.Data
         {
             modelBuilder.Entity<Teste>().ToTable("TABELA_TESTE").HasKey(x => x.ID);
             modelBuilder.Entity<Client>().ToTable("CLIENT").HasKey(x => x.ID);
-
+            modelBuilder.Entity<Reservation>().ToTable("RESERVATION").HasKey(x => x.ID);
             modelBuilder.Entity<Bedroom>().ToTable("BEDROOM").HasKey(x => x.ID);
 
+            modelBuilder.Entity<Reservation>().HasOne(x => x.BEDROOM)
+                   .WithMany(ctn => ctn.RESERVATION)
+                   .HasForeignKey(fk => fk.ID_BEDROOM);
+
+            modelBuilder.Entity<Reservation>().HasOne(x => x.CLIENT)
+                   .WithMany(ctn => ctn.RESERVATION)
+                   .HasForeignKey(fk => fk.ID_CLIENT);
+
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<Teste>().HasOne(x => x.TABELA_TESTE)
-            //       .WithMany(ctn => ctn.TABELA_TESTE)
-            //       .HasForeignKey(fk => fk.TABELA_TESTE);
         }
 
 

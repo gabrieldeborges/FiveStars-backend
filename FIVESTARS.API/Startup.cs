@@ -102,6 +102,7 @@ namespace FIVESTARS.API
             services.AddTransient<ITesteRepository, TesteRepository>();
             services.AddTransient<IBedroomRepository, BedroomRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IReservationRepository, ReservationRepository>();
         }
 
         private void AddHandlers(IServiceCollection services)
@@ -109,6 +110,7 @@ namespace FIVESTARS.API
             services.AddTransient<TesteHandler, TesteHandler>();
             services.AddTransient<BedroomHandler, BedroomHandler>();
             services.AddTransient<ClientHandler, ClientHandler>();
+            services.AddTransient<ReservationHandler, ReservationHandler>();
         }
 
         private void MapEntities()

@@ -34,7 +34,7 @@ namespace FIVESTARS.Infra.Repository
         }
         public Bedroom SearchBedroomForID(int id)
         {
-            return DbSet.First(x => x.ID == id);
+            return DbSet.FirstOrDefault(x => x.ID == id);
         }
     }
 }

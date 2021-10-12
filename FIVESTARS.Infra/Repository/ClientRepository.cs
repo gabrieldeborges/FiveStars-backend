@@ -23,7 +23,7 @@ namespace FIVESTARS.Infra.Repository
 
         public Client SearchClientForID(int id)
         {
-            return DbSet.First(x => x.ID == id);
+            return DbSet.FirstOrDefault(x => x.ID == id);
         }
 
         public List<Client> SearchClients()
@@ -38,6 +38,11 @@ namespace FIVESTARS.Infra.Repository
         public int UpdateClient(Client bedroom)
         {
             return Update(bedroom);
+        }
+
+        public bool ExistsEmail(string email)
+        {
+            return DbSet.Any(x => x.EMAIL == email);
         }
     }
 }
