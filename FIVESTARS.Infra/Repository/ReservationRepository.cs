@@ -17,12 +17,13 @@ namespace FIVESTARS.Infra.Repository
             _context = context;
         }
 
-        public bool AavailableForRent(int idBedroom)
+        public bool AavailableForRent(int idBedroom, int idReseerve, DateTime initialDate, DateTime finalDate)
         {
             var teste = from reserve in DbSet
                         where reserve.STATUS != 1
-                        && (DateTime.Now.Date >= reserve.INITIAL_DATE.Date && DateTime.Now.Date <= reserve.FINAL_DATE.Date)
+                        && (initialDate >= reserve.INITIAL_DATE.Date && finalDate <= reserve.FINAL_DATE.Date)
                         && reserve.ID_BEDROOM == idBedroom
+                        && reserve.ID != idReseerve
                         select reserve;
             return !teste.Any();
         }
@@ -45,12 +46,14 @@ namespace FIVESTARS.Infra.Repository
                                 where reserve.STATUS != 1 && bedroom.STATUS != 1
                                 select new SearchReservationsResult
                                 {
+                                    id = reserve.ID,
                                     idClient = client.ID,
                                     idBedroom = bedroom.ID,
                                     quantityBeds = bedroom.QUANTITY_BEDS,
                                     quantityBathroom = bedroom.QUANTITY_BATHROOM,
                                     nameClient = client.NOME,
                                     emailClient = client.EMAIL,
+                                    observation = reserve.OBSERVATION,
                                     cpfClient = client.CPF,
                                     finalDate = reserve.FINAL_DATE,
                                     initialDate = reserve.INITIAL_DATE

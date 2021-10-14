@@ -46,7 +46,7 @@ namespace FIVESTARS.Domain.Handlers
                 return 0;
             }
 
-            if (!_repository.AavailableForRent(command.idBedroom))
+            if (!_repository.AavailableForRent(command.idBedroom, command.id, command.initialDate, command.finalDate))
             {
                 AddNotification("Quarto", "O quarto não está disponpivel para a reserva nas datas selecionadas.");
                 return 0;
@@ -72,7 +72,7 @@ namespace FIVESTARS.Domain.Handlers
                 reserve.OBSERVATION = command.observation;
                 reserve.FINAL_DATE = command.finalDate;
                 reserve.INITIAL_DATE = command.initialDate;
-                return _repository.SaveReservation(reserve);
+                return _repository.UpdateReservation(reserve);
             }
         }
 

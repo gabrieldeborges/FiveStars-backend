@@ -12,7 +12,7 @@ namespace FIVESTARS.Domain.Interfaces
         public int UpdateReservation(Reservation bedroom);
         public List<SearchReservationsResult> SearchReservations();
         public Reservation SearchReservationForID(int ID);
-        public bool AavailableForRent(int idBedroom);
+        public bool AavailableForRent(int idBedroom, int idReserve, DateTime initialDate, DateTime finalDate);
 
     }
 }
