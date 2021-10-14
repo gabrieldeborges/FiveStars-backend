@@ -46,9 +46,14 @@ namespace FIVESTARS.Domain.Handlers
                 return 0;
             }
 
-            if (!_repository.AavailableForRent(command.idBedroom, command.id, command.initialDate, command.finalDate))
+            var reservationsBetweenSelection = _repository.AavailableForRent(command.idBedroom, command.id, command.initialDate, command.finalDate);
+
+            if (reservationsBetweenSelection.Count != 0)
             {
-                AddNotification("Quarto", "O quarto não está disponpivel para a reserva nas datas selecionadas.");
+                foreach (var item in reservationsBetweenSelection)
+                {
+                    AddNotification("Quarto indisponível", $"O quarto já possui uma reserva do dia {item.INITIAL_DATE.ToString("dd/MM/yyyy")} até o dia {item.FINAL_DATE.Date.ToString("dd/MM/yyyy")}");
+                }
                 return 0;
             }
 

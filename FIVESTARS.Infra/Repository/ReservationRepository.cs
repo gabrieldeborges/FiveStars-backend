@@ -17,15 +17,16 @@ namespace FIVESTARS.Infra.Repository
             _context = context;
         }
 
-        public bool AavailableForRent(int idBedroom, int idReseerve, DateTime initialDate, DateTime finalDate)
+        public List<Reservation> AavailableForRent(int idBedroom, int idReseerve, DateTime initialDate, DateTime finalDate)
         {
             var teste = from reserve in DbSet
                         where reserve.STATUS != 1
-                        && (initialDate >= reserve.INITIAL_DATE.Date && finalDate <= reserve.FINAL_DATE.Date)
+                        && ((initialDate.Date >= reserve.INITIAL_DATE.Date && initialDate.Date <= reserve.FINAL_DATE.Date) 
+                            || (finalDate.Date >=reserve.INITIAL_DATE.Date && finalDate.Date <= reserve.FINAL_DATE.Date))
                         && reserve.ID_BEDROOM == idBedroom
                         && reserve.ID != idReseerve
                         select reserve;
-            return !teste.Any();
+            return teste.ToList();
         }
 
         public int SaveReservation(Reservation reserve)
