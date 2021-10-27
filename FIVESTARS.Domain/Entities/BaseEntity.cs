@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace FIVESTARS.Domain.Entities
+    //aaaaa
 {
     public class BaseEntity
     {

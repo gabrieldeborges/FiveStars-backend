@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\LUANA\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\LUANA\\.nuget\\packages"
+      "C:\\Users\\Guilherme\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Guilherme\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
 }

@@ -6,3 +6,12 @@ C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
 C:\Users\LUANA\source\repos\FIVESTARS.API\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.csprojAssemblyReference.cache
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll.config
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.deps.json
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\bin\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.dll
+C:\Users\Guilherme\Source\Repos\FiveStars-backend\FIVESTARS.Domain\obj\Debug\netcoreapp3.1\FIVESTARS.Domain.pdb

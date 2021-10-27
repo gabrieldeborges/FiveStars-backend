@@ -1320,10 +1320,10 @@
           "Microsoft.EntityFrameworkCore": "5.0.10"
         },
         "runtime": {
-          "FiveStars.Domain.dll": {}
+          "FIVESTARS.Domain.dll": {}
         },
         "compile": {
-          "FiveStars.Domain.dll": {}
+          "FIVESTARS.Domain.dll": {}
         }
       },
       "FIVESTARS.Infra/1.0.0": {
@@ -1334,10 +1334,10 @@
           "Pomelo.EntityFrameworkCore.MySql": "5.0.2"
         },
         "runtime": {
-          "FiveStars.Infra.dll": {}
+          "FIVESTARS.Infra.dll": {}
         },
         "compile": {
-          "FiveStars.Infra.dll": {}
+          "FIVESTARS.Infra.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {

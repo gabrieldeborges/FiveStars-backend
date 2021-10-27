@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj": {}
+    "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.API\\FIVESTARS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj": {
+    "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.API\\FIVESTARS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.API\\FIVESTARS.API.csproj",
         "projectName": "FIVESTARS.API",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\FIVESTARS.API.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.API\\obj\\",
+        "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.API\\FIVESTARS.API.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
+              "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+                "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
               },
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FiveStars.Infra.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FiveStars.Infra.csproj"
+              "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj": {
+                "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\FiveStars.Infra.csproj"
               }
             }
           }
@@ -88,21 +92,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
+    "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
         "projectName": "FIVESTARS.Domain",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FIVESTARS.Domain.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,21 +160,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj": {
+    "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
         "projectName": "FIVESTARS.Infra",
-        "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
-        "packagesPath": "C:\\Users\\LUANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Infra\\obj\\",
+        "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\FIVESTARS.Infra.csproj",
+        "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LUANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,8 +192,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
-                "projectPath": "C:\\Users\\LUANA\\source\\repos\\FIVESTARS.API\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
+              "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj": {
+                "projectPath": "C:\\Users\\Guilherme\\Source\\Repos\\FiveStars-backend\\FIVESTARS.Domain\\FiveStars.Domain.csproj"
               }
             }
           }
@@ -224,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
