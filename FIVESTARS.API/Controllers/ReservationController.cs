@@ -35,9 +35,9 @@ namespace FIVESTARS.API.Controllers
         }
 
         [HttpPost("DeleteReserve")]
-        public IActionResult Post([FromQuery] int idClient)
+        public IActionResult Post([FromQuery] int idReserve)
         {
-            return Response(_handler.Handler(idClient));
+            return Response(_handler.Handler(idReserve));
         }
 
     }
