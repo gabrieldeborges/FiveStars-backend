@@ -21,7 +21,7 @@ namespace FIVESTARS.Domain.Commands.Client
                  .IsNotNullOrEmpty(NOME, "Nome Cliente", "Nome não pode ser nulo")
                  .IsNotNullOrEmpty(CPF, "CPF", "CPF não pode ser nulo")
                  .HasLen(CPF, 11, "CPF", "O campo de CPF tem de ser preenchido com 11 caracteres.")
-                 .HasMaxLen((CEP.Replace("-", "")), 9, "Quantidade", "É necessário 9 caracteres para o campo de CEP.")
+                 .HasLen((CEP.Replace("-", "")), 8, "Quantidade", "É necessário 9 caracteres para o campo de CEP.")
              );
             return Valid;
         }

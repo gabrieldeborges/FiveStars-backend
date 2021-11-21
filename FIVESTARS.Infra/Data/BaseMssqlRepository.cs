@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace FIVESTARS.Infra.Data
 {
-    public class BaseMssqlRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
+    public class BaseMssqlRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
         protected readonly Context _context;
     

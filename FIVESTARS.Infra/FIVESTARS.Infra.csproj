@@ -12,22 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="Migrations\20211009051229_insertClient.cs" />
-    <Compile Include="Migrations\20211009051229_insertClient.Designer.cs" />
-    <Compile Include="Migrations\20211009051406_tabelClient.cs" />
-    <Compile Include="Migrations\20211009051406_tabelClient.Designer.cs" />
-    <Compile Include="Migrations\20211009051518_tabelClient2.cs" />
-    <Compile Include="Migrations\20211009051518_tabelClient2.Designer.cs" />
-    <Compile Include="Migrations\20211009052411_tabelClient4.cs" />
-    <Compile Include="Migrations\20211009052411_tabelClient4.Designer.cs" />
-    <Compile Include="Migrations\20211011221957_aditional_reservation.cs" />
-    <Compile Include="Migrations\20211011221957_aditional_reservation.Designer.cs" />
-    <Compile Include="Migrations\20211011224855_aditional_reservation2.cs" />
-    <Compile Include="Migrations\20211011224855_aditional_reservation2.Designer.cs" />
-    <Compile Include="Migrations\ContextModelSnapshot.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.10" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.2" />

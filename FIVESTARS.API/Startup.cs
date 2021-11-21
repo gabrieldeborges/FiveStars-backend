@@ -39,7 +39,7 @@ namespace FIVESTARS.API
             var connection = Configuration["ConnectionStrings:connection"];
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest).AddJsonOptions(options => options.JsonSerializerOptions. = new DefaultContractResolver());
             services.AddDbContext<Context>(opt => opt.UseMySql(connection, ServerVersion.AutoDetect(connection)));
-
+            
             AddRepositories(services);
 
             services.AddResponseCompression();
@@ -99,7 +99,6 @@ namespace FIVESTARS.API
         }
         private void AddRepositories(IServiceCollection services)
         {
-            services.AddTransient<ITesteRepository, TesteRepository>();
             services.AddTransient<IBedroomRepository, BedroomRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<IReservationRepository, ReservationRepository>();
@@ -107,7 +106,6 @@ namespace FIVESTARS.API
 
         private void AddHandlers(IServiceCollection services)
         {
-            services.AddTransient<TesteHandler, TesteHandler>();
             services.AddTransient<BedroomHandler, BedroomHandler>();
             services.AddTransient<ClientHandler, ClientHandler>();
             services.AddTransient<ReservationHandler, ReservationHandler>();
@@ -115,7 +113,6 @@ namespace FIVESTARS.API
 
         private void MapEntities()
         {
-            MapEntity(typeof(Teste));
             MapEntity(typeof(Client));
             MapEntity(typeof(Bedroom));
         }
