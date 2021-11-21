@@ -11,6 +11,6 @@ namespace FIVESTARS.Domain.Interfaces
         public int UpdateClient(Client bedroom);
         public List<Client> SearchClients();
         public Client SearchClientForID(int ID);
-        public bool ExistsEmail(string email);
+        public bool ExistsEmail(string email, int id);
     }
 }

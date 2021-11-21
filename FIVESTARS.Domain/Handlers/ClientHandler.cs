@@ -32,7 +32,7 @@ namespace FIVESTARS.Domain.Handlers
                 return 0;
             }
 
-            if (_repository.ExistsEmail(command.Email))
+            if (_repository.ExistsEmail(command.Email, command.id))
             {
                 AddNotification("Email", "Email já cadastrado");
                 return 0;

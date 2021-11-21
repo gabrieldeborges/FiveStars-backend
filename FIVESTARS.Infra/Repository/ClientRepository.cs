@@ -40,9 +40,9 @@ namespace FIVESTARS.Infra.Repository
             return Update(bedroom);
         }
 
-        public bool ExistsEmail(string email)
+        public bool ExistsEmail(string email, int id)
         {
-            return DbSet.Any(x => x.EMAIL == email);
+            return DbSet.Any(x => x.EMAIL == email && x.ID != id);
         }
     }
 }
