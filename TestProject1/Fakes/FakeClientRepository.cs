@@ -7,7 +7,7 @@ namespace TestProject1.Fakes
 {
     public class FakeClientRepository : IClientRepository
     {
-        public bool ExistsEmail(string email)
+        public bool ExistsEmail(string email, int id)
         {
             return false;
         }
