@@ -38,14 +38,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'Artifact-FiveStars'
     publishLocation: 'Container'
-
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure para Estudantes (e58a0f9d-bcb1-467c-b4ee-57460a91513a)'
-    appType: 'webApp'
-    WebAppName: 'five-stars'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'RG-US-fivestars-backend-deploy'
-    SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
