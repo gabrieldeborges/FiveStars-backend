@@ -15,7 +15,9 @@ namespace TestProject1.API
     {
         private readonly WebApplicationFactory<FIVESTARS.API.Startup> _factory;
 
-        string urlBedroom = "api/Reservation";
+        HttpClient clientHttp = new HttpClient();
+
+        string urlReserve = "https://five-stars.azurewebsites.net/api/Reservation";
 
         public ReservationApiTest(WebApplicationFactory<FIVESTARS.API.Startup> factory)
         {
@@ -26,10 +28,7 @@ namespace TestProject1.API
         [InlineData("api/Reservation")]
         public async Task GetAllBedroomTest(string url)
         {
-            // Arrange
-            var client = _factory.CreateClient();
-            //act
-            var response = await client.GetAsync(url);
+            var response = await clientHttp.GetAsync(urlReserve);
             // Assert
             response.EnsureSuccessStatusCode();
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -43,9 +42,8 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Bedrooms);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
-            // Act
-            var response = await client.PostAsync(urlBedroom, contentString);
+
+            var response = await clientHttp.PostAsync(urlReserve, contentString);
             // Assert
 
             response.EnsureSuccessStatusCode();
@@ -60,9 +58,8 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Bedrooms);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
             // Act
-            var response = await client.PostAsync(urlBedroom, contentString);
+            var response = await clientHttp.PostAsync(urlReserve, contentString);
             // Assert
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);

@@ -16,21 +16,24 @@ namespace TestProject1.API
     {
         private readonly WebApplicationFactory<FIVESTARS.API.Startup> _factory;
 
+        HttpClient clientHttp = new HttpClient();
+
+        string urlClient = "https://five-stars.azurewebsites.net/api/Client";
+
         public ClientApiTest(WebApplicationFactory<FIVESTARS.API.Startup> factory)
         {
             _factory = factory;
         }
-
-        string urlClient = "api/Client";
 
         [Theory]
         [InlineData("api/Client")]
         public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
         {
             // Arrange
-            var client = _factory.CreateClient();
+            var response = clientHttp.GetAsync(urlClient).Result;
+            //var client = _factory.CreateClient();
             //act
-            var response = await client.GetAsync(url);
+            //var response = await client.GetAsync(url);
             // Assert
             response.EnsureSuccessStatusCode();
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -45,9 +48,10 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Clients);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
+            //var client = _factory.CreateClient();
             // Act
-            var response = await client.PostAsync(urlClient, contentString);
+            var response = clientHttp.PostAsync(urlClient, contentString).Result;
+            //var response = await client.PostAsync(urlClient, contentString);
             // Assert
 
             response.EnsureSuccessStatusCode();
@@ -63,9 +67,8 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Clients);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
             // Act
-            var response = await client.PostAsync(urlClient, contentString);
+            var response = await clientHttp.PostAsync(urlClient, contentString);
             // Assert
 
 

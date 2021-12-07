@@ -12,7 +12,7 @@ using Xunit;
 
 namespace TestProject1.Handlers
 {
-    public class ReservationHandlerTest 
+    public class ReservationHandlerTest
     {
         [Theory]
         [MemberData(nameof(GetCommandReservation))]
@@ -82,7 +82,7 @@ namespace TestProject1.Handlers
                 {
                     new object[]
                     {
-                        new SaveReservationCommand() { idBedroom = 1, idClient = 1, initialDate = DateTime.Now.AddDays(5), finalDate = DateTime.Now.AddDays(7) }
+                        new SaveReservationCommand() { idBedroom = 1, idClient = 1, initialDate = DateTime.Now, finalDate = DateTime.Now.AddDays(7) }
                     },new object[]
                     {
                         new SaveReservationCommand() { idBedroom = 1, idClient = 1, initialDate = DateTime.Now.AddDays(5), finalDate = DateTime.Now.AddDays(7) }

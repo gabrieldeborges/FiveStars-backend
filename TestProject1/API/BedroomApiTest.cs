@@ -16,7 +16,9 @@ namespace TestProject1.API
     {
         private readonly WebApplicationFactory<FIVESTARS.API.Startup> _factory;
 
-        string urlBedroom = "api/Bedroom";
+        HttpClient clientHttp = new HttpClient();
+
+        string urlBedroom = "https://five-stars.azurewebsites.net/api/Bedroom";
 
         public BedroomApiTest(WebApplicationFactory<FIVESTARS.API.Startup> factory)
         {
@@ -27,9 +29,7 @@ namespace TestProject1.API
         public async Task GetAllBedroomTest()
         {
 
-            var client = _factory.CreateClient();
-
-            var response = await client.GetAsync(urlBedroom);
+            var response = await clientHttp.GetAsync(urlBedroom);
 
             response.EnsureSuccessStatusCode();
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -43,9 +43,8 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Bedrooms);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
             // Act
-            var response = await client.PostAsync(urlBedroom, contentString);
+            var response = await clientHttp.PostAsync(urlBedroom, contentString);
             // Assert
 
             response.EnsureSuccessStatusCode();
@@ -60,9 +59,8 @@ namespace TestProject1.API
             // Arrange
             var jsonContent = JsonConvert.SerializeObject(Bedrooms);
             var contentString = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-            var client = _factory.CreateClient();
             // Act
-            var response = await client.PostAsync(urlBedroom, contentString);
+            var response = await clientHttp.PostAsync(urlBedroom, contentString);
             // Assert
 
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);

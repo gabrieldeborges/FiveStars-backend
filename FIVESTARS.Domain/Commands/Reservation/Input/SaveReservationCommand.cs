@@ -19,7 +19,7 @@ namespace FIVESTARS.Domain.Commands.Reservation.Input
             AddNotifications(new ValidationContract()
                  .IsFalse(idClient == 0, "Cliente", "Cliente não encontrado.")
                  .IsFalse(idBedroom == 0, "Quarto", "Quarto não encontrado.")
-                 .IsGreaterThan(initialDate, DateTime.Now,   "Data de inicio", "A data de inicio da reserva não pode ser menor que hoje")
+                 .IsFalse(initialDate.Date < DateTime.Now.Date, "Data de inicio", "A data de inicio da reserva não pode ser menor que hoje")
                  .IsGreaterThan(finalDate, DateTime.Now, "Data de fim", "A data de fim da reserva não pode ser menor que hoje")
                  .IsGreaterThan(finalDate, initialDate, "Datas", "A data de inicio não pode ser maior que a de fim")
              );
