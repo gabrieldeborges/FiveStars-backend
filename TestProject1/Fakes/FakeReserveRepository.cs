@@ -30,7 +30,7 @@ namespace TestProject1.Fakes
         {
             var bedroom = new Bedroom() { BED_TYPE = "CAMAS DE SOLTEIRO", DOOR = 2, FLOOR = 1, MORE_INFORMATION = "TESTE", ID = 1, QUANTITY_BATHROOM = 2, QUANTITY_BEDS = 2, STATUS = 0 };
             var client = new Client() { BIRTH_DATE = DateTime.Now, CEP = "00000000", EMAIL = "SGADHAG@GMAIL.COM", CPF = "000000000", NOME = "GABRIEL", STATUS = 0 , ID = 1};
-            return new Reservation() { BEDROOM = bedroom, CLIENT = client, FINAL_DATE = DateTime.Parse("30/11/2001"), ID = 1, ID_BEDROOM = 1, ID_CLIENT = 1, INITIAL_DATE = DateTime.Now, OBSERVATION = "", STATUS = 0 };
+            return new Reservation() { BEDROOM = bedroom, CLIENT = client, FINAL_DATE = DateTime.Now.AddDays(-20), ID = 1, ID_BEDROOM = 1, ID_CLIENT = 1, INITIAL_DATE = DateTime.Now, OBSERVATION = "", STATUS = 0 };
         }
 
         public List<SearchReservationsResult> SearchReservations()
@@ -43,7 +43,7 @@ namespace TestProject1.Fakes
             listClient.Add(new Client() { BIRTH_DATE = DateTime.Now, CEP = "00000000", EMAIL = "SGADHAG@GMAIL.COM", CPF = "000000000", NOME = "GABRIEL", STATUS = 0, ID = 1 });
 
             var listReserve = new List<Reservation>();
-            listReserve.Add(new Reservation() { BEDROOM = listBedroom[0], CLIENT = listClient[0], FINAL_DATE = DateTime.Parse("30/11/2001"), ID = 1, ID_BEDROOM = 1, ID_CLIENT = 1, INITIAL_DATE = DateTime.Now, OBSERVATION = "", STATUS = 0 });
+            listReserve.Add(new Reservation() { BEDROOM = listBedroom[0], CLIENT = listClient[0], FINAL_DATE = DateTime.Now.AddDays(-20), ID = 1, ID_BEDROOM = 1, ID_CLIENT = 1, INITIAL_DATE = DateTime.Now.AddDays(-19), OBSERVATION = "", STATUS = 0 });
 
 
             var reservations = (from reserve in listReserve
